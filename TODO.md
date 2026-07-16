@@ -1,5 +1,0 @@
-- [ ] Read relevant UI template(s)
-- [ ] Identify the 8 inputs and their ids
-- [ ] Update template HTML: add <label for="..."> above each corresponding input; preserve existing input ids/placeholder values
-- [ ] Do not modify any styling/layout (no CSS changes)
-- [ ] Return only the modified HTML snippet/content required

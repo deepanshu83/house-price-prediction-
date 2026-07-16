@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI House Price Prediction</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+</div>
+
+<nav>
+
+    <div class="logo">
+
+        🏡 AI House Predictor
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#prediction">Prediction</a>
+
+    </div>
+
+    <div class="social-links">
+        <a href="https://github.com/deepanshu83" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://my-portfolio-eight-lime-95.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </div>
+
+</nav>
+
+<section class="hero" id="hero">
+
+    <div class="left">
+
+        <span class="tag">
+            AI Powered Machine Learning
+        </span>
+
+        <h1>
+
+            Predict House Prices
+            <span>within Seconds.</span>
+
+        </h1>
+
+        <p>
+
+            Built using FastAPI, Scikit-Learn and Machine Learning.
+            Enter your house details and let AI estimate the market value instantly.
+
+        </p>
+
+        <div class="buttons">
+
+            <a class="primary" href="#prediction">
+
+                Try AI 🚀
+
+            </a>
+
+            <a class="secondary" href="https://github.com/deepanshu83" target="_blank" rel="noopener noreferrer">
+
+                GitHub
+
+            </a>
+
+            <a class="secondary" href="https://my-portfolio-eight-lime-95.vercel.app/" target="_blank" rel="noopener noreferrer">
+
+                Portfolio
+
+            </a>
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+
+                <h2>20K+</h2>
+                <p>Predictions</p>
+
+            </div>
+
+            <div>
+
+                <h2>95%</h2>
+                <p>Accuracy</p>
+
+            </div>
+
+            <div>
+
+                <h2>Fast</h2>
+                <p>Response</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right" id="prediction">
+
+        <div class="glass-card">
+
+            <div class="card-topline">
+                <span class="chip">Portfolio-style UI</span>
+                <span class="chip alt">Live prediction</span>
+            </div>
+
+            <h2>
+
+                House Details
+
+            </h2>
+
+            <form id="predictionForm">
+
+                <div class="grid">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="MedInc"
+                        placeholder="Median Income">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="HouseAge"
+                        placeholder="House Age">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="AveRooms"
+                        placeholder="Average Rooms">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="AveBedrms"
+                        placeholder="Average Bedrooms">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="Population"
+                        placeholder="Population">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="AveOccup"
+                        placeholder="Average Occupancy">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="Latitude"
+                        placeholder="Latitude">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="Longitude"
+                        placeholder="Longitude">
+
+                </div>
+
+                <button
+                    class="predict-btn"
+                    id="submitBtn"
+                    type="submit">
+
+                    <span class="btn-text">Predict House Price 🚀</span>
+                    <span class="spinner hidden">Predicting…</span>
+
+                </button>
+
+            </form>
+
+            <div id="result" class="result-card hidden">
+                <h2>Estimated Market Value</h2>
+                <h1 id="predicted-price">$0.000</h1>
+                <p id="result-message">Your price estimate will appear here.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features">
+
+    <h2>Why Choose Our AI?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Instant Prediction</h3>
+            <p>
+                Get house price predictions within milliseconds using our trained Machine Learning model.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">🤖</div>
+            <h3>AI Powered</h3>
+            <p>
+                Built with Scikit-Learn and served through FastAPI for high performance.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">📊</div>
+            <h3>Accurate Results</h3>
+            <p>
+                Trained on California Housing Dataset using Linear Regression.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-box">
+
+        <h2>About this Project</h2>
+
+        <p>
+
+            This project demonstrates an end-to-end Machine Learning workflow.
+
+            Dataset ➜ Data Analysis ➜ Training ➜ Model Saving ➜ FastAPI ➜ Web Application
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+            <span>Scikit-Learn</span>
+            <span>FastAPI</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>🏡 AI House Price Prediction</h2>
+
+        <p>
+
+            Built with ❤️ by Deepanshu
+
+        </p>
+
+        <div class="socials">
+
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Portfolio</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
